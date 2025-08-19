@@ -6,6 +6,11 @@ class Settings(BaseSettings):
     database_url: str
     jwt_secret: str
     groq_api_key: str
+    jwt_algorithm: str
+    jwt_expiration_minutes: int
+    app_name: str
+    app_env: str
+    debug: bool
     cors_origins: str = "http://localhost:3000"
     
     @property
